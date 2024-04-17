@@ -1,0 +1,11 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for comp sci NEA project",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && cd build && node main.js && cd .."
+  },
+  "author": "Oscar Ratcliffe",
+  "license": "ISC"
+}
