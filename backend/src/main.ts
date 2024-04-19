@@ -1,6 +1,8 @@
 const express = require('express')
+const fs = require('fs')
 const app = express()
-const port = 3000
+const port = 4000
+import animationData from '../data/animations/MrP.json';
 
 app.get('/', (req: any, res: any) => {
     res.statusCode = 501;
@@ -12,6 +14,10 @@ app.get('/Test/:TestVar', (req: any, res: any) => {
         "Test": "Test",
         "URL variable": req.params.TestVar
     })
+})
+
+app.get('/Animation', (req: any, res: any) => {
+    res.send(animationData)
 })
 
 app.listen(port, () => {

@@ -4,7 +4,7 @@
   "description": "Backend for comp sci NEA project",
   "main": "index.js",
   "scripts": {
-    "test": "tsc && cd build && node main.js && cd .."
+    "test": "tsc && cd build/src && node main.js && cd ../../"
   },
   "author": "Oscar Ratcliffe",
   "license": "ISC",
